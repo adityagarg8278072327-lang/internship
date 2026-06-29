@@ -1,61 +1,34 @@
-<!doctype html>
-<html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>SSPL | Arya P.G.</title>
-      <link rel="stylesheet" href="index.css">
-   </head>
-   <body>
-      <div class="container">
-         <!-- Navbar -->
-         <div class="navbar">
-            <!-- logo -->
-            <div class="logo">
-               <img src="logo.webp " alt="logo" />
-               <div class="companyName">
-                  <span>Satyaansh Softech</span>
-                  Pvt. Ltd.
-               </div>
-            </div>
+<!DOCTYPE html>
 
-            <!-- Menu-Items -->
-            <ul class="daysLink">
-               <li onclick="loadPage('project1.html')">Day 1</li>
-               <li onclick="loadPage('project2.html')">Day 2</li>
-               <li onclick="loadPage('project3.html')">Day 3</li>
-               <li onclick="loadPage('project4.html')">Day 4</li>
-               <li onclick="loadPage('project5.html')">Day 5</li>
-               <li onclick="loadPage('project6.html')">Day 6</li>
+<html lang="en"></html>
 
-            </ul>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <link rel="stylesheet" href="project3.css">
+</head>
 
-            <!-- right button -->
-            <button class="hamburger">
-               <img src="images/hambuger.png" alt="menu" />
-            </button>
-         </div>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.webp" alt="logo">
+        </div>
+        <div class="hamburger">☰</div>
+        <ul class="nav-links">
+            <li>Home</li>
+            <li>Services</li>
+            <li>Products</li>
+            <li>AboutUs</li>
+        </ul>
+    </nav>
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        })
+    </script>
 
-         <!-- Days -->
-         <iframe
-            id="dayFrame"
-            src="project1.html"
-            width="100%"
-            height="800">
-         </iframe>
-      </div>
-      <script>
-         const hamburger = document.querySelector(".hamburger");
-         const daysLink = document.querySelector(".daysLink");
-
-         hamburger.addEventListener("click", () => {
-            daysLink.classList.toggle("active");
-         });
-
-         function loadPage(page) {
-           let frame= document.getElementById("dayFrame")
-           frame.src = page;
-         }
-      </script>
-   </body>
-</html><!doctype html>
+</body>
+</html>
