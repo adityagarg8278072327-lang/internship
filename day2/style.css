@@ -1,0 +1,32 @@
+.image-container img{
+    width: 50px;
+
+}
+.container{
+    display:flex;
+    justify-content: space-between;
+    flex-direction:row;
+    background-color: greenyellow;
+    border-radius: 5px;
+    align-items:center;
+    padding: 20px;
+    flex-wrap: wrap;
+    font-size: 30px;
+}
+.list-container{
+    display:flex;
+    gap:30px;
+    list-style: none;
+     flex-wrap: wrap;
+}
+.btn-container{
+    border-radius: 10px;
+    border-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+padding: auto;
+
+}
+button{
+    background-color: white blue;
+
+}
